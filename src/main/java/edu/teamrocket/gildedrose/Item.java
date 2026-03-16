@@ -1,11 +1,11 @@
-package edu.teamrocket;
+package edu.teamrocket.gildedrose;
 
 public class Item {
 
     //atributos
     private final String name;
-    private int sell_in;
-    private int quality;
+    private int sell_in = 0;
+    private int quality = 0;
 
     //constructor
     Item(String name, int sell_in, int quality) {
@@ -15,7 +15,7 @@ public class Item {
     };
 
     //métodos
-     String getName() {
+    String getName() {
         return name;
     }
 
@@ -27,16 +27,13 @@ public class Item {
         return quality;
     }
 
-    void setSell_in(int sell_in) {
-        this.sell_in = sell_in;
+    void setSell_in() {
+        this.sell_in = this.getSell_in() - 1;
     }
 
-    void setQuality(int quality) {
-        this.quality = quality;
+    void setQuality(int value) {
+        this.quality = value;
     }
-
-    @Override
-    public String toString() {};
 
 
 }
