@@ -7,6 +7,8 @@ public class Item {
     private int sell_in = 0;
     private int quality = 0;
 
+
+
     //constructor
     Item(String name, int sell_in, int quality) {
         this.name = name;
@@ -14,6 +16,8 @@ public class Item {
         this.quality = quality;
     };
 
+
+    
     //métodos
     String getName() {
         return name;
