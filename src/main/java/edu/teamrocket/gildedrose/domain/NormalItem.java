@@ -1,4 +1,4 @@
-package edu.teamrocket.gildedrose;
+package edu.teamrocket.gildedrose.domain;
 
 public class NormalItem {
     private final Item item;

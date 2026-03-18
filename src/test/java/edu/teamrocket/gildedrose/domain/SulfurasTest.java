@@ -1,4 +1,4 @@
-package edu.teamrocket.gildedrose;
+package edu.teamrocket.gildedrose.domain;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
