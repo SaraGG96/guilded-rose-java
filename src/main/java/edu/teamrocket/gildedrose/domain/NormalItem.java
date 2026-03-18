@@ -1,33 +1,33 @@
 package edu.teamrocket.gildedrose.domain;
 
-public class NormalItem {
+public class NormalItem implements Updateable {
     private final Item item;
     
     //constructor
     NormalItem(String name, int sell_in, int quality) {
         this.item = new Item(name, sell_in, quality);
-    };
+    }
 
     //métodos
     Item getItem() {
         return this.item;
-    };
+    }
 
     public int getQuality() {
         return item.getQuality();
-    };
+    }
 
     public String getName() {
         return item.getName();
-    };
+    }
 
     public int getSell_in() {
         return item.getSell_in();
-    };
+    }
 
     void setSell_in() {
         item.setSell_in();
-    };
+    }
 
     void computeQuality(int value) {
 
